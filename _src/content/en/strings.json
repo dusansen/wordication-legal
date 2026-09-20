@@ -1,0 +1,7 @@
+{
+  "home": "Home",
+  "privacyTitle": "Privacy Policy",
+  "termsTitle": "Terms of Use",
+  "privacyNotice": "You are viewing version {v} of this policy. <a href=\"{href}\">View the latest version &rarr;</a>",
+  "termsNotice": "You are viewing version {v} of these terms. <a href=\"{href}\">View the latest version &rarr;</a>"
+}

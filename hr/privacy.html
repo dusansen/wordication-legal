@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politika privatnosti - Wordication: Word Guess Party</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #333; max-width: 760px; margin: 0 auto; padding: 40px 24px 60px; }
+        a { color: #4f7ef7; }
+        h1 { font-size: 2rem; color: #0B0D14; border-bottom: 2px solid #eee; padding-bottom: 12px; margin-bottom: 4px; }
+        .meta { color: #888; font-size: 0.9rem; margin-bottom: 32px; }
+        h2 { font-size: 1.15rem; color: #0B0D14; margin-top: 36px; margin-bottom: 8px; }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        .contact-box { background: #f4f7ff; padding: 16px 20px; border-left: 4px solid #4f7ef7; border-radius: 0 8px 8px 0; margin: 32px 0 0; }
+        .back { display: inline-block; margin-bottom: 28px; font-size: 0.9rem; color: #4f7ef7; text-decoration: none; }
+        .back:hover { text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.92rem; }
+        th { background: #f4f7ff; text-align: left; padding: 8px 12px; color: #0B0D14; border: 1px solid #e0e4f0; }
+        td { padding: 8px 12px; border: 1px solid #e0e4f0; vertical-align: top; }
+        tr:nth-child(even) td { background: #fafbff; }
+        .lang-switch { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; font-size: 0.88rem; }
+        .lang-switch a { color: #4f7ef7; text-decoration: none; padding: 4px 12px; border-radius: 20px; border: 1px solid #d0daff; }
+        .lang-switch a:hover { background: #eef2ff; }
+        .lang-switch a.active { background: #4f7ef7; color: #fff; border-color: #4f7ef7; }
+        .deletion-box { background: #f0faf4; border-left: 4px solid #27ae60; border-radius: 0 8px 8px 0; padding: 14px 20px; margin: 16px 0; }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back">&#8592; Početna</a>
+    <div class="lang-switch">
+        <a href="../privacy.html">EN</a>
+        <a href="../fr/privacy.html">FR</a>
+        <a href="../de/privacy.html">DE</a>
+        <a href="../es/privacy.html">ES</a>
+        <a href="../it/privacy.html">IT</a>
+        <a href="privacy.html" class="active">HR</a>
+        <a href="../sr/privacy.html">SR</a>
+    </div>
+    <h1>Politika privatnosti</h1>
+    <p class="meta">Zadnje a&#382;uriranje: 20. rujna 2026. &mdash; Verzija 1.0.0</p>
+
+    <p>Va&#353;a privatnost nam je va&#382;na. Ovaj dokument obja&#353;njava koje podatke aplikacija <strong>Wordication: Word Guess Party</strong> prikuplja, kako se koriste i koje su va&#353;e mogu&#263;nosti.</p>
+
+    <h2>1. Podaci koje prikupljamo</h2>
+
+    <p><strong>Anonimna autentifikacija.</strong> Solo na&#269;in mo&#382;ete igrati bez kreiranja ra&#269;una. U tom slu&#269;aju Firebase anonimna autentifikacija va&#353;oj sesiji na ure&#273;aju dodjeljuje nasumi&#269;ni jedinstveni identifikator (UID) &mdash; ne zahtijeva se niti se prikuplja ime, adresa e-po&#353;te ili bilo koji osobni podatak.</p>
+
+    <p><strong>Prijava putem Apple ili Google ra&#269;una.</strong> Dvoboji, ljestvica i profil koji vas prati na novi ure&#273;aj zahtijevaju ra&#269;un. Mo&#382;ete se prijaviti putem <strong>Sign in with Apple</strong> ili <strong>Google Sign-In</strong> kroz Firebase autentifikaciju. Kada se prijavite na taj na&#269;in, od davatelja usluge primamo i pohranjujemo sljede&#263;e podatke vezane uz va&#353; ra&#269;un:</p>
+    <ul>
+        <li>Va&#353;u adresu e-po&#353;te</li>
+        <li>Va&#353;e ime za prikaz (ako ga davatelj pru&#382;i; Apple vam omogu&#263;uje skrivanje imena)</li>
+        <li>Jedinstveni identifikator koji je izdao davatelj usluge (Apple ID ili ID Google ra&#269;una)</li>
+    </ul>
+    <p>Ne primamo niti pohranjujemo va&#353;u lozinku. Autentifikacijom u potpunosti upravljaju Apple ili Google.</p>
+
+    <p><strong>Nadimak.</strong> Pri kreiranju ra&#269;una odabirete nadimak. Pohranjuje se u na&#353;u bazu podataka i <em>javno je vidljiv</em>: va&#353;im protivnicima u dvobojima, na ljestvici te svima u dru&#382;ini (party) kojoj se pridru&#382;ite ili koju otvorite. Molimo vas da u nadimak ne unosite osobne podatke.</p>
+
+    <p><strong>Podaci o igri.</strong> Pohranjujemo napredak vezan uz va&#353; ra&#269;un:</p>
+    <ul>
+        <li>Solo statistika: odigrane, pogo&#273;ene i proma&#353;ene rije&#269;i, bodovi, trenutni i najbolji niz te koliko vam je natuknica trebalo.</li>
+        <li>Stanje nov&#269;i&#263;a, niz dnevnih nagrada i broj nagradnih oglasa pogledanih danas.</li>
+        <li>Podaci o dvobojima: va&#353; rejting (ELO), najbolji rejting, odigrane partije, pobjede, porazi i nerije&#353;eni ishodi.</li>
+        <li>Zavr&#353;eni dvoboji: UID-ovi oba igra&#269;a, odigrane rije&#269;i, rezultati rundi, vremena, kona&#269;ni rezultat i promjena rejtinga.</li>
+        <li>Me&#273;usobni omjer za svakog protivnika protiv kojeg ste igrali.</li>
+        <li>Va&#353; jezik, postavke zvuka i obavijesti te nedavno prikazane rije&#269;i (kako se ne bi ponavljale).</li>
+    </ul>
+
+    <p><strong>Ljestvica.</strong> Aplikacija ima javnu <strong>ljestvicu</strong> s 250 najboljih igra&#269;a prema rejtingu iz dvoboja. Ako u&#273;ete na nju, va&#353; nadimak, avatar, rejting i broj odigranih partija vidljivi su svim korisnicima aplikacije.</p>
+
+    <p><strong>Dvoboji.</strong> Dvoboji se igraju u&#382;ivo protiv drugog igra&#269;a. Tijekom me&#269;a va&#353; nadimak, podatak da upisujete, va&#353;i neto&#269;ni poku&#353;aji, rezultat i status veze dijele se s protivnikom kako bi se me&#269; mogao prikazati. Podaci u&#382;ivo privremeno se pohranjuju u Firebase Realtime Database i bri&#353;u ubrzo nakon zavr&#353;etka me&#269;a; sa&#382;etak zavr&#353;enog me&#269;a arhivira se kako je gore opisano.</p>
+
+    <p><strong>Igre u dru&#382;ini (party).</strong> Mo&#382;ete otvoriti privatnu dru&#382;inu do 8 igra&#269;a ili joj se pridru&#382;iti pomo&#263;u &#353;esteroznamenkastog koda. Tijekom igre nadimak, status spremnosti, aktivnost poga&#273;anja i rezultat svakog igra&#269;a vidljivi su svima za stolom. Sobe su privremene i bri&#353;u se nakon zavr&#353;etka igre. Svatko tko ima kod mo&#382;e se pridru&#382;iti, pa ga podijelite samo s osobama s kojima &#382;elite igrati.</p>
+
+    <p><strong>Push obavijesti.</strong> Aplikacija &#263;e zatra&#382;iti va&#353;u dozvolu za slanje push obavijesti. Ako je odobrite, pohranjujemo token obavijesti za va&#353; ure&#273;aj i koristimo ga <em>isklju&#269;ivo</em> kako bismo vas obavijestili da je prona&#273;en protivnik, da netko &#382;eli revan&#353; ili da je me&#269; zavr&#353;en. Dnevni podsjetnik zakazuje se na va&#353;em ure&#273;aju i ne &#353;alje se s na&#353;ih poslu&#382;itelja. Ne &#353;aljemo marketin&#353;ke poruke niti dijelimo va&#353; token s tre&#263;im stranama. Dozvolu mo&#382;ete opozvati u bilo kojem trenutku u postavkama ure&#273;aja ili isklju&#269;iti pojedine obavijesti u aplikaciji.</p>
+
+    <p><strong>Oglasni podaci.</strong> Aplikacija prikazuje me&#273;uprostorne oglase izme&#273;u partija te neobavezne <strong>nagradne</strong> oglase koje mo&#382;ete pogledati u zamjenu za nov&#269;i&#263;e. Oglase poslu&#382;uje <strong>Google AdMob</strong> i njegovi medijacijski partneri. Ti partneri mogu automatski prikupljati odre&#273;ene podatke s va&#353;eg ure&#273;aja radi prikaza oglasa, uklju&#269;uju&#263;i:</p>
+    <ul>
+        <li>Oglasne identifikatore (npr. IDFA na iOS-u, GAID na Androidu)</li>
+        <li>IP adresu i pribli&#382;nu lokaciju (dr&#382;ava/regija)</li>
+        <li>Podatke o ure&#273;aju (model, verzija sustava, veli&#269;ina zaslona)</li>
+        <li>Podatke o interakciji (prikazi, klikovi, dovr&#353;eni nagradni pregledi)</li>
+    </ul>
+    <p>Te podatke prikupljaju izravno oglasni SDK-ovi prema vlastitim politikama privatnosti svakog partnera i mi ih ne pohranjujemo.</p>
+
+    <p><strong>App Tracking Transparency (iOS).</strong> Na iOS-u 14 i novijem aplikacija &#263;e prikazati Appleov ATT upit prije pristupa oglasnom identifikatoru (IDFA) va&#353;eg ure&#273;aja. Ako date dozvolu, podaci iz ove aplikacije mogu se koristiti za pra&#263;enje kroz druge aplikacije i web stranice u svrhu ciljanog ogla&#353;avanja. Ako odbijete, prikazivat &#263;e se samo nepersonalizirani oglasi. Odabir mo&#382;ete promijeniti u bilo kojem trenutku putem <em>Postavke &rarr; Privatnost i sigurnost &rarr; Pra&#263;enje</em>.</p>
+
+    <p><strong>Analitika.</strong> Koristimo <strong>Firebase Analytics</strong> kako bismo razumjeli kori&#353;tenje aplikacije na skupnoj razini &mdash; primjerice koliko partija se pokre&#263;e, koji se zasloni otvaraju i gdje igra&#269;i odustaju. Ti su doga&#273;aji vezani uz identifikator instalacije aplikacije, a ne uz va&#353;u adresu e-po&#353;te ili nadimak.</p>
+
+    <p><strong>Izvje&#353;taji o ru&#353;enjima i gre&#353;kama.</strong> Kada se aplikacija sru&#353;i ili naidje na neo&#269;ekivanu gre&#353;ku, dijagnosti&#269;ki izvje&#353;taj &#353;alje se servisu <strong>Sentry</strong>. Sadr&#382;i tehni&#269;ke podatke poput same gre&#353;ke, modela ure&#273;aja, verzije operativnog sustava, verzije aplikacije i zaslona na kojem ste bili. Koristimo ga isklju&#269;ivo za ispravljanje gre&#353;aka.</p>
+
+    <p><strong>Spre&#269;avanje zlouporabe.</strong> Aplikacija koristi <strong>Firebase App Check</strong> (App Attest na iOS-u, Play Integrity na Androidu) kako bi potvrdila da zahtjevi dolaze iz izvorne kopije aplikacije. Provjeravaju se aplikacija i ure&#273;aj, a ne vi.</p>
+
+    <p><strong>Podaci pohranjeni na va&#353;em ure&#273;aju.</strong> Va&#353;e postavke, spremljeni profil, trenutni popis rije&#269;i i napredak u partiji koja traje pohranjeni su lokalno na ure&#273;aju kako bi aplikacija radila izvan mre&#382;e i brzo se pokretala. Deinstalacijom aplikacije ti se lokalni podaci uklanjaju.</p>
+
+    <h2>2. Kako koristimo va&#353;e podatke</h2>
+    <ul>
+        <li>Za rad igre: poslu&#382;ivanje rije&#269;i, spremanje rezultata te a&#382;uriranje statistike, nizova, nov&#269;i&#263;a i rejtinga.</li>
+        <li>Za spajanje s protivnikom i vo&#273;enje dvoboja u&#382;ivo te prikaz zavr&#353;enih me&#269;eva i me&#273;usobnih omjera.</li>
+        <li>Za vo&#273;enje igara me&#273;u igra&#269;ima koji imaju va&#353; kod dru&#382;ine.</li>
+        <li>Za prikaz javne ljestvice.</li>
+        <li>Za sinkronizaciju ra&#269;una me&#273;u ure&#273;ajima, kako bi novi telefon vratio va&#353; napredak.</li>
+        <li>Za obavje&#353;tavanje o dvobojima, revan&#353;ima i rezultatima (samo uz va&#353;u dozvolu).</li>
+        <li>Za prikaz oglasa i pripis nov&#269;i&#263;a zara&#273;enih nagradnim oglasima.</li>
+        <li>Za mjerenje skupnog kori&#353;tenja, dijagnostiku ru&#353;enja i za&#353;titu usluge od zlouporabe.</li>
+    </ul>
+    <p>Ne prodajemo va&#353;e osobne podatke i ne koristimo ih ni u koju svrhu osim gore navedenih.</p>
+
+    <h2>3. Usluge tre&#263;ih strana</h2>
+    <p>Koristimo sljede&#263;e usluge tre&#263;ih strana. Svaka obra&#273;uje podatke prema vlastitoj politici privatnosti:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Usluga</th>
+                <th>Pru&#382;atelj</th>
+                <th>Svrha</th>
+                <th>Politika privatnosti</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Firebase</td>
+                <td>Google LLC</td>
+                <td>Autentifikacija (anonimna, Apple, Google Sign-In), baza podataka, hosting i App Check</td>
+                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Pogledaj politiku</a></td>
+            </tr>
+            <tr>
+                <td>Sign in with Apple</td>
+                <td>Apple Inc.</td>
+                <td>Prijava na ra&#269;un</td>
+                <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Pogledaj politiku</a></td>
+            </tr>
+            <tr>
+                <td>Google Sign-In</td>
+                <td>Google LLC</td>
+                <td>Prijava na ra&#269;un</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Pogledaj politiku</a></td>
+            </tr>
+            <tr>
+                <td>Firebase Analytics</td>
+                <td>Google LLC</td>
+                <td>Skupna analitika kori&#353;tenja</td>
+                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Pogledaj politiku</a></td>
+            </tr>
+            <tr>
+                <td>Google AdMob</td>
+                <td>Google LLC</td>
+                <td>Poslu&#382;ivanje oglasa i medijacijska platforma</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Pogledaj politiku</a></td>
+            </tr>
+            <tr>
+                <td>AppLovin</td>
+                <td>AppLovin Corporation</td>
+                <td>Medijacijski oglasni partner</td>
+                <td><a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">Pogledaj politiku</a></td>
+            </tr>
+            <tr>
+                <td>Meta Audience Network</td>
+                <td>Meta Platforms, Inc.</td>
+                <td>Medijacijski oglasni partner</td>
+                <td><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Pogledaj politiku</a></td>
+            </tr>
+            <tr>
+                <td>Unity Ads</td>
+                <td>Unity Technologies</td>
+                <td>Medijacijski oglasni partner</td>
+                <td><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Pogledaj politiku</a></td>
+            </tr>
+            <tr>
+                <td>Expo Push Notifications</td>
+                <td>650 Industries, Inc.</td>
+                <td>Dostava obavijesti o dvobojima i revan&#353;ima</td>
+                <td><a href="https://expo.dev/privacy" target="_blank" rel="noopener">Pogledaj politiku</a></td>
+            </tr>
+            <tr>
+                <td>Sentry</td>
+                <td>Functional Software, Inc.</td>
+                <td>Dijagnostika ru&#353;enja i gre&#353;aka</td>
+                <td><a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Pogledaj politiku</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Gdje se pohranjuju va&#353;i podaci</h2>
+    <p>Na&#353;a baza podataka, poslu&#382;itelji i funkcije igre rade u regiji <strong>europe-west1</strong> Google Clouda (Belgija). Na&#353;i partneri tre&#263;e strane sjedi&#353;te imaju u Sjedinjenim Ameri&#269;kim Dr&#382;avama i drugdje te mogu obra&#273;ivati podatke izvan va&#353;e zemlje, u skladu s vlastitim za&#353;titnim mjerama i politikama privatnosti.</p>
+
+    <h2>5. Izbori vezani uz oglase</h2>
+    <p>Prema zadanim postavkama mogu se prikazivati personalizirani oglasi na temelju va&#353;eg oglasnog identifikatora. Na raspolaganju su vam sljede&#263;e kontrole:</p>
+    <ul>
+        <li><strong>iOS:</strong> otvorite <em>Postavke &rarr; Privatnost i sigurnost &rarr; Pra&#263;enje</em> kako biste ograni&#269;ili pra&#263;enje ili poni&#353;tili oglasni identifikator.</li>
+        <li><strong>Android:</strong> otvorite <em>Postavke &rarr; Google &rarr; Oglasi</em> kako biste isklju&#269;ili personalizaciju ili poni&#353;tili oglasni ID.</li>
+        <li>U Europskom gospodarskom prostoru, Ujedinjenom Kraljevstvu i &#352;vicarskoj aplikacija pri prvom pokretanju prikazuje obrazac privole. Taj izbor mo&#382;ete ponovno promijeniti u postavkama privatnosti aplikacije, gdje su dostupne.</li>
+        <li>Postavke mo&#382;ete urediti i putem Googleovih <a href="https://adssettings.google.com" target="_blank" rel="noopener">postavki oglasa</a>.</li>
+    </ul>
+    <p>Odbijanje personaliziranih oglasa ograni&#269;ava ciljanje, ali ne uklanja oglase iz aplikacije.</p>
+
+    <h2>6. &#268;uvanje i brisanje podataka</h2>
+    <p><strong>Gosti (anonimni igra&#269;i):</strong> va&#353; napredak vezan je uz anonimni UID. Ako deinstalirate aplikaciju, pristup tom anonimnom ra&#269;unu je izgubljen. Za zahtjev za brisanje podataka povezanih s va&#353;im anonimnim UID-om javite nam se i navedite taj UID (vidljiv u postavkama aplikacije).</p>
+
+    <p><strong>Prijavljeni igra&#269;i &mdash; brisanje ra&#269;una u aplikaciji:</strong> svoj ra&#269;un i sve povezane podatke mo&#382;ete obrisati izravno u aplikaciji, u bilo kojem trenutku:</p>
+    <div class="deletion-box">
+        <ol>
+            <li>Otvorite aplikaciju i idite na <strong>Profil &rarr; Obri&#353;i ra&#269;un</strong>.</li>
+            <li>Pro&#269;itajte informacije o tome &#353;to &#263;e biti obrisano.</li>
+            <li>Potvrdite brisanje kada se to zatra&#382;i.</li>
+        </ol>
+    </div>
+    <p>Brisanjem ra&#269;una trajno se iz na&#353;ih sustava uklanja sljede&#263;e:</p>
+    <ul>
+        <li>Va&#353;a adresa e-po&#353;te, ime za prikaz i sam prijavni ra&#269;un</li>
+        <li>Va&#353; nadimak (osloba&#273;a se i postaje dostupan drugima)</li>
+        <li>Sva Solo i Dvoboj statistika, nizovi, nov&#269;i&#263;i i va&#353; rejting</li>
+        <li>Va&#353;i tokeni obavijesti i postavke obavijesti</li>
+        <li>Va&#353; zapis na ljestvici</li>
+    </ul>
+    <p>Zapisi o zavr&#353;enim dvobojima i me&#273;usobni omjeri se &#269;uvaju jer su jednako dio povijesti va&#353;ih protivnika. Nakon brisanja sadr&#382;e samo anoniman identifikator ra&#269;una &mdash; bez nadimka, adrese e-po&#353;te ili profila &mdash; a arhivirani me&#269;evi automatski se uklanjaju 180 dana nakon &#353;to su odigrani.</p>
+    <p><strong>Brisanje ra&#269;una je trajno i ne mo&#382;e se poni&#353;titi.</strong> Dovr&#353;it &#263;emo ga u roku od 30 dana od va&#353;eg zahtjeva. Preostale kopije u automatskim sigurnosnim kopijama bit &#263;e uklonjene u istom roku.</p>
+    <p>Dodatno:</p>
+    <ul>
+        <li>Ako ste se prijavili putem Applea, pristup mo&#382;ete opozvati u <em>Postavke &rarr; [Va&#353;e ime] &rarr; Prijava i sigurnost &rarr; Prijava putem Applea</em>.</li>
+        <li>Ako ste se prijavili putem Googlea, pristup mo&#382;ete opozvati na <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+    </ul>
+    <p>Opoziv pristupa davatelju usluge ne bri&#353;e automatski va&#353;e podatke iz na&#353;e baze. Koristite gore opisano brisanje u aplikaciji. Ako nai&#273;ete na pote&#353;ko&#263;e, javite nam se na <a href="mailto:contact@wordicationapp.com">contact@wordicationapp.com</a>.</p>
+
+    <h2>7. Va&#353;a prava</h2>
+    <p>Ovisno o tome gdje &#382;ivite, mo&#382;da imate pravo pristupiti osobnim podacima koje o vama &#269;uvamo, ispraviti ih, izvesti ili obrisati te prigovoriti obradi ili je ograni&#269;iti. Sve mo&#382;ete obrisati sami pomo&#263;u gore opisane opcije u aplikaciji; za svaki drugi zahtjev pi&#353;ite nam na <a href="mailto:contact@wordicationapp.com">contact@wordicationapp.com</a> i odgovorit &#263;emo u roku od 30 dana.</p>
+
+    <h2>8. Privatnost djece</h2>
+    <p>Aplikacija nije namijenjena djeci mla&#273;oj od 13 godina. Gosti ne daju osobne podatke. Me&#273;utim, igra&#269;ima koji se prijave putem Applea ili Googlea pohranjujemo adresu e-po&#353;te. Svjesno ne prikupljamo osobne podatke djece mla&#273;e od 13 godina (odnosno mla&#273;e od 16 gdje to nala&#382;e lokalni propis). Ako smatrate da je dijete izradilo ra&#269;un, javite nam se i odmah &#263;emo ga obrisati.</p>
+
+    <h2>9. Izmjene ove politike</h2>
+    <p>Ovu politiku mo&#382;emo povremeno a&#382;urirati. Datum &bdquo;Zadnje a&#382;uriranje&rdquo; na vrhu odra&#382;avat &#263;e sve promjene. Nastavak kori&#353;tenja aplikacije nakon promjena zna&#269;i prihva&#263;anje izmijenjene politike.</p>
+
+    <div class="contact-box">
+        <strong>Kontakt i podr&#353;ka</strong><br>
+        Imate pitanje ili zahtjev za brisanje podataka? Javite nam se na:<br>
+        <a href="mailto:contact@wordicationapp.com">contact@wordicationapp.com</a>
+    </div>
+</body>
+</html>

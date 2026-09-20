@@ -1,0 +1,7 @@
+{
+  "home": "Startseite",
+  "privacyTitle": "Datenschutzerklärung",
+  "termsTitle": "Nutzungsbedingungen",
+  "privacyNotice": "Sie sehen Version {v} dieser Datenschutzerklärung. <a href=\"{href}\">Aktuelle Version ansehen &rarr;</a>",
+  "termsNotice": "Sie sehen Version {v} dieser Nutzungsbedingungen. <a href=\"{href}\">Aktuelle Version ansehen &rarr;</a>"
+}

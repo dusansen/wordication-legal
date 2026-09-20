@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Wordication: Word Guess Party</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #333; max-width: 760px; margin: 0 auto; padding: 40px 24px 60px; }
+        a { color: #4f7ef7; }
+        h1 { font-size: 2rem; color: #0B0D14; border-bottom: 2px solid #eee; padding-bottom: 12px; margin-bottom: 4px; }
+        .meta { color: #888; font-size: 0.9rem; margin-bottom: 32px; }
+        h2 { font-size: 1.15rem; color: #0B0D14; margin-top: 36px; margin-bottom: 8px; }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        .contact-box { background: #f4f7ff; padding: 16px 20px; border-left: 4px solid #4f7ef7; border-radius: 0 8px 8px 0; margin: 32px 0 0; }
+        .back { display: inline-block; margin-bottom: 28px; font-size: 0.9rem; color: #4f7ef7; text-decoration: none; }
+        .back:hover { text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.92rem; }
+        th { background: #f4f7ff; text-align: left; padding: 8px 12px; color: #0B0D14; border: 1px solid #e0e4f0; }
+        td { padding: 8px 12px; border: 1px solid #e0e4f0; vertical-align: top; }
+        tr:nth-child(even) td { background: #fafbff; }
+        .lang-switch { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; font-size: 0.88rem; }
+        .lang-switch a { color: #4f7ef7; text-decoration: none; padding: 4px 12px; border-radius: 20px; border: 1px solid #d0daff; }
+        .lang-switch a:hover { background: #eef2ff; }
+        .lang-switch a.active { background: #4f7ef7; color: #fff; border-color: #4f7ef7; }
+        .deletion-box { background: #f0faf4; border-left: 4px solid #27ae60; border-radius: 0 8px 8px 0; padding: 14px 20px; margin: 16px 0; }
+        .version-notice { background: #fff8e1; border-left: 4px solid #f6b93b; border-radius: 0 8px 8px 0; padding: 10px 16px; font-size: 0.9rem; margin-bottom: 24px; }
+        .version-notice a { color: #4f7ef7; }
+    </style>
+</head>
+<body>
+    <a href="../../index.html" class="back">&#8592; Home</a>
+    <div class="version-notice">You are viewing version 1.0.0 of this policy. <a href="../../privacy.html">View the latest version &rarr;</a></div>
+    <div class="lang-switch">
+        <a href="index.html" class="active">EN</a>
+        <a href="fr/index.html">FR</a>
+        <a href="de/index.html">DE</a>
+        <a href="es/index.html">ES</a>
+        <a href="it/index.html">IT</a>
+        <a href="hr/index.html">HR</a>
+        <a href="sr/index.html">SR</a>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last Updated: September 20, 2026 &mdash; Version 1.0.0</p>
+
+    <p>Your privacy matters to us. This policy explains what information the <strong>Wordication: Word Guess Party</strong> app collects, how it is used, and the choices you have.</p>
+
+    <h2>1. Information We Collect</h2>
+
+    <p><strong>Anonymous Authentication.</strong> You may play Solo without creating an account. When you do, Firebase Anonymous Authentication assigns a random unique identifier (UID) to your device session &mdash; no name, email address, or any personal information is required or collected.</p>
+
+    <p><strong>Authenticated Sign-In (Apple &amp; Google).</strong> Duels, the leaderboard and a profile that follows you to a new device require an account. You may sign in using <strong>Sign in with Apple</strong> or <strong>Google Sign-In</strong> via Firebase Authentication. When you sign in this way, we receive from the provider and store the following information linked to your account:</p>
+    <ul>
+        <li>Your email address</li>
+        <li>Your display name (if provided by the provider; Apple allows you to hide your name)</li>
+        <li>A unique identifier issued by the provider (Apple ID or Google Account ID)</li>
+    </ul>
+    <p>We do not receive or store your password. Authentication is handled entirely by Apple or Google.</p>
+
+    <p><strong>Nickname.</strong> When you create an account you choose a nickname. It is stored in our database and is <em>publicly visible</em>: to your duel opponents, on the leaderboard, and to everyone in a party you join or host. Please do not include personal information in your nickname.</p>
+
+    <p><strong>Game Data.</strong> We store the progress attached to your account:</p>
+    <ul>
+        <li>Solo statistics: words played, guessed and missed, points, current and best streak, and how many hints you needed.</li>
+        <li>Your coin balance, daily-reward streak and the number of rewarded ads watched today.</li>
+        <li>Duel data: your rating (ELO), peak rating, games played, wins, losses and draws.</li>
+        <li>Finished duels: the two players' UIDs, the words played, round results, timings, the final score and the rating change.</li>
+        <li>A head-to-head record for each opponent you have faced.</li>
+        <li>Your chosen language, sound and notification settings, and the recent words you were shown (so they are not repeated).</li>
+    </ul>
+
+    <p><strong>Leaderboard.</strong> The app has a public <strong>rating leaderboard</strong> showing the top 250 players by duel rating. If you qualify, your nickname, avatar, rating and number of games played are visible to everyone using the app.</p>
+
+    <p><strong>Duels.</strong> Duels are played live against another player. While a match is running, your nickname, your typing activity, your wrong guesses, your score and your connection status are shared with your opponent so the match can be displayed. Live match data is stored temporarily in the Firebase Realtime Database and deleted shortly after the match ends; a summary of the finished match is archived as described above.</p>
+
+    <p><strong>Party Games.</strong> You can host or join a private party of up to 8 players using a 6-character code. While a party is running, the nickname, ready state, guessing activity and score of every player are visible to everyone else at that table. Party rooms are temporary and are deleted after the game ends. Anyone who has the code can join, so only share it with people you want to play with.</p>
+
+    <p><strong>Push Notifications.</strong> The app will request your permission to send push notifications. If you grant permission, we store a push token for your device and use it <em>solely</em> to tell you that an opponent has been found, that someone wants a rematch, or that a match you were in has finished. The daily reminder is scheduled on your device itself and is not sent from our servers. We do not send marketing messages and we do not share your push token with third parties. You can revoke this permission at any time in your device settings, or switch individual notifications off in the app.</p>
+
+    <p><strong>Advertising Data.</strong> The app displays interstitial advertisements between games and optional <strong>rewarded</strong> advertisements that you can choose to watch in exchange for coins. Ads are served by <strong>Google AdMob</strong> and its mediation partners. These advertising partners may automatically collect certain information from your device in order to serve ads, including:</p>
+    <ul>
+        <li>Advertising identifiers (e.g., IDFA on iOS, GAID on Android)</li>
+        <li>IP address and approximate location (country/region level)</li>
+        <li>Device information (device model, OS version, screen size)</li>
+        <li>Ad interaction data (impressions, clicks, completed rewarded views)</li>
+    </ul>
+    <p>This data is collected directly by the advertising SDKs under each partner's own privacy policy and is not stored by us.</p>
+
+    <p><strong>App Tracking Transparency (iOS).</strong> On iOS 14 and later, the app will present Apple's App Tracking Transparency (ATT) prompt before accessing your device's advertising identifier (IDFA). If you grant permission, data from this app may be used to track you across apps and websites for targeted advertising purposes. If you deny permission, only non-personalized ads will be shown. You can update this choice at any time via <em>Settings &rarr; Privacy &amp; Security &rarr; Tracking</em>.</p>
+
+    <p><strong>Analytics.</strong> We use <strong>Firebase Analytics</strong> to understand how the app is used in aggregate &mdash; for example how many games are started, which screens are opened and where players drop off. These events are tied to an app-instance identifier, not to your email address or nickname.</p>
+
+    <p><strong>Crash &amp; Error Reporting.</strong> When the app crashes or hits an unexpected error, a diagnostic report is sent to <strong>Sentry</strong>. It contains technical information such as the error itself, the device model, the operating system version, the app version and the screen you were on. We use it only to fix bugs.</p>
+
+    <p><strong>Abuse Prevention.</strong> The app uses <strong>Firebase App Check</strong> (App Attest on iOS, Play Integrity on Android) to confirm that requests come from a genuine copy of the app. This checks the app and the device, not you.</p>
+
+    <p><strong>Data Stored on Your Device.</strong> Your settings, your cached profile, the current word list and your progress in an ongoing game are stored locally on your device so the app works offline and starts quickly. Uninstalling the app removes this local data.</p>
+
+    <h2>2. How We Use Your Data</h2>
+    <ul>
+        <li>To run the game: serve words, save your results, and keep your stats, streaks, coins and rating up to date.</li>
+        <li>To match you with an opponent and run a live duel, and to display finished matches and head-to-head records.</li>
+        <li>To run party games among the players who have your party code.</li>
+        <li>To display the public rating leaderboard.</li>
+        <li>To synchronise your account across devices, so a new phone restores your progress.</li>
+        <li>To notify you about duels, rematches and results (only if you have granted permission).</li>
+        <li>To display advertisements and to credit the coins you earn from rewarded ads.</li>
+        <li>To measure aggregate usage, diagnose crashes and protect the service from abuse.</li>
+    </ul>
+    <p>We do not sell your personal data, and we do not use it for any purpose other than those listed above.</p>
+
+    <h2>3. Third-Party Services</h2>
+    <p>We use the following third-party services. Each processes data under its own privacy policy:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Provider</th>
+                <th>Purpose</th>
+                <th>Privacy Policy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Firebase</td>
+                <td>Google LLC</td>
+                <td>Authentication (anonymous, Apple, Google Sign-In), database, hosting &amp; App Check</td>
+                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">View policy</a></td>
+            </tr>
+            <tr>
+                <td>Sign in with Apple</td>
+                <td>Apple Inc.</td>
+                <td>Authenticated account sign-in</td>
+                <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">View policy</a></td>
+            </tr>
+            <tr>
+                <td>Google Sign-In</td>
+                <td>Google LLC</td>
+                <td>Authenticated account sign-in</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">View policy</a></td>
+            </tr>
+            <tr>
+                <td>Firebase Analytics</td>
+                <td>Google LLC</td>
+                <td>Aggregate usage analytics</td>
+                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">View policy</a></td>
+            </tr>
+            <tr>
+                <td>Google AdMob</td>
+                <td>Google LLC</td>
+                <td>Ad serving &amp; mediation platform</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">View policy</a></td>
+            </tr>
+            <tr>
+                <td>AppLovin</td>
+                <td>AppLovin Corporation</td>
+                <td>Ad mediation partner</td>
+                <td><a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">View policy</a></td>
+            </tr>
+            <tr>
+                <td>Meta Audience Network</td>
+                <td>Meta Platforms, Inc.</td>
+                <td>Ad mediation partner</td>
+                <td><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">View policy</a></td>
+            </tr>
+            <tr>
+                <td>Unity Ads</td>
+                <td>Unity Technologies</td>
+                <td>Ad mediation partner</td>
+                <td><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">View policy</a></td>
+            </tr>
+            <tr>
+                <td>Expo Push Notifications</td>
+                <td>650 Industries, Inc.</td>
+                <td>Delivery of duel &amp; rematch notifications</td>
+                <td><a href="https://expo.dev/privacy" target="_blank" rel="noopener">View policy</a></td>
+            </tr>
+            <tr>
+                <td>Sentry</td>
+                <td>Functional Software, Inc.</td>
+                <td>Crash &amp; error diagnostics</td>
+                <td><a href="https://sentry.io/privacy/" target="_blank" rel="noopener">View policy</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Where Your Data Is Stored</h2>
+    <p>Our database, servers and game functions run in Google Cloud's <strong>europe-west1</strong> region (Belgium). Our third-party providers are based in the United States and elsewhere and may process data outside your country under their own safeguards and privacy policies.</p>
+
+    <h2>5. Advertising Choices</h2>
+    <p>By default, personalized advertising may be served based on your advertising identifier. You have the following controls:</p>
+    <ul>
+        <li><strong>iOS:</strong> Go to <em>Settings &rarr; Privacy &amp; Security &rarr; Tracking</em> to limit ad tracking or reset your advertising identifier.</li>
+        <li><strong>Android:</strong> Go to <em>Settings &rarr; Google &rarr; Ads</em> to opt out of ads personalization or reset your advertising ID.</li>
+        <li>In the European Economic Area, the United Kingdom and Switzerland, the app shows a consent form on first launch. You can change that choice again from the app's privacy options where available.</li>
+        <li>You may also manage ad preferences through Google's <a href="https://adssettings.google.com" target="_blank" rel="noopener">Ad Settings</a>.</li>
+    </ul>
+    <p>Opting out of personalized ads limits ad targeting but does not remove advertisements from the app.</p>
+
+    <h2>6. Data Retention &amp; Deletion</h2>
+    <p><strong>Guest (anonymous) players:</strong> Your progress is linked to your anonymous UID. If you uninstall the app, access to that anonymous account is lost. To request deletion of data associated with your anonymous UID, contact us and include your UID (visible in the app's settings).</p>
+
+    <p><strong>Signed-in players &mdash; In-App Account Deletion:</strong> You can delete your account and all associated data directly from within the app at any time:</p>
+    <div class="deletion-box">
+        <ol>
+            <li>Open the app and navigate to <strong>Profile &rarr; Delete account</strong>.</li>
+            <li>Review the information about what will be deleted.</li>
+            <li>Confirm deletion when prompted.</li>
+        </ol>
+    </div>
+    <p>Deleting your account permanently removes the following data from our systems:</p>
+    <ul>
+        <li>Your email address and display name, and your sign-in account itself</li>
+        <li>Your nickname (it is released and becomes available to others)</li>
+        <li>All Solo and Duel statistics, streaks, coins and your rating</li>
+        <li>Your push tokens and notification settings</li>
+        <li>Your entry on the leaderboard</li>
+    </ul>
+    <p>Records of finished duels and head-to-head totals are kept, because they are equally part of your opponents' history. After deletion they contain only an anonymous account identifier &mdash; no nickname, email address or profile &mdash; and archived matches are removed automatically 180 days after they were played.</p>
+    <p><strong>Account deletion is permanent and cannot be undone.</strong> We will complete the deletion within 30 days of your request. Residual copies in automated backups will be purged within that same period.</p>
+    <p>Additionally:</p>
+    <ul>
+        <li>If you signed in with Apple, you can revoke app access via <em>Settings &rarr; [Your Name] &rarr; Password &amp; Security &rarr; Apps Using Apple ID</em>.</li>
+        <li>If you signed in with Google, you can revoke app access at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+    </ul>
+    <p>Revoking provider access does not automatically delete your data from our database. Please use the in-app deletion feature above. If you experience any difficulty completing the deletion, contact us at <a href="mailto:contact@wordicationapp.com">contact@wordicationapp.com</a>.</p>
+
+    <h2>7. Your Rights</h2>
+    <p>Depending on where you live, you may have the right to access, correct, export or delete the personal data we hold about you, and to object to or restrict its processing. You can delete everything yourself using the in-app deletion described above; for any other request, write to us at <a href="mailto:contact@wordicationapp.com">contact@wordicationapp.com</a> and we will respond within 30 days.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>The app is not directed at children under 13. Guest players do not provide personal information. However, players who sign in with Apple or Google will have their email address stored by us. We do not knowingly collect personal data from children under 13 (or under 16 where required by local law). If you believe a child has created an account, please contact us and we will delete it promptly.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. The "Last Updated" date at the top will reflect any changes. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+
+    <div class="contact-box">
+        <strong>Contact &amp; Support</strong><br>
+        Have a question or a data deletion request? Reach us at:<br>
+        <a href="mailto:contact@wordicationapp.com">contact@wordicationapp.com</a>
+    </div>
+</body>
+</html>

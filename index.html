@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordication: Word Guess Party - Legal &amp; Support</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #f7f9ff;
+        }
+        header {
+            background: #0B0D14;
+            color: #fff;
+            text-align: center;
+            padding: 52px 24px 44px;
+        }
+        header h1 { margin: 0 0 8px; font-size: 2.2rem; letter-spacing: -0.5px; }
+        header p { margin: 0; color: #aab4d4; font-size: 1rem; }
+        main { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
+
+        /* Links section */
+        .links-section { margin-bottom: 52px; }
+        .links-section h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 16px; }
+        .link-cards { display: flex; gap: 16px; flex-wrap: wrap; }
+        .link-card {
+            flex: 1 1 200px;
+            background: #fff;
+            border: 1px solid #e8eaf0;
+            border-radius: 12px;
+            padding: 24px 20px;
+            text-decoration: none;
+            color: #0B0D14;
+            transition: box-shadow 0.15s, transform 0.15s;
+        }
+        .link-card:hover { box-shadow: 0 4px 20px rgba(79,126,247,0.12); transform: translateY(-2px); }
+        .link-card .icon { font-size: 1.8rem; margin-bottom: 10px; }
+        .link-card strong { display: block; font-size: 1.05rem; margin-bottom: 4px; }
+        .link-card span { color: #777; font-size: 0.88rem; }
+
+        /* Language row */
+        .lang-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; font-size: 0.85rem; }
+        .lang-row a { color: #4f7ef7; text-decoration: none; padding: 4px 12px; border-radius: 20px; border: 1px solid #d0daff; background: #fff; }
+        .lang-row a:hover { background: #eef2ff; }
+
+        /* Contact form */
+        .contact-section h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 16px; }
+        form {
+            background: #fff;
+            border: 1px solid #e8eaf0;
+            border-radius: 12px;
+            padding: 28px 24px 24px;
+        }
+        .field { margin-bottom: 18px; }
+        label { display: block; font-size: 0.88rem; font-weight: 600; color: #555; margin-bottom: 6px; }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #d9dce8;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: #333;
+            background: #fafbff;
+            transition: border-color 0.15s;
+            outline: none;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus { border-color: #4f7ef7; background: #fff; }
+        textarea { resize: vertical; min-height: 130px; }
+        button[type="submit"] {
+            background: #4f7ef7;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 28px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        button[type="submit"]:hover { background: #3a65d8; }
+        .form-note { font-size: 0.82rem; color: #999; margin-top: 12px; }
+
+        footer { text-align: center; color: #bbb; font-size: 0.82rem; padding: 24px; }
+
+        /* App download badges */
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #0B0D14;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            transition: background 0.15s, transform 0.15s;
+        }
+        .app-badge:hover { background: #22263a; transform: translateY(-2px); }
+        .app-badge .badge-icon { width: 28px; height: 28px; object-fit: contain; flex-shrink: 0; filter: brightness(0) invert(1); }
+        .app-badge .badge-text { display: flex; flex-direction: column; line-height: 1.2; }
+        .app-badge .badge-text small { font-size: 0.7rem; color: #aab4d4; }
+        .app-badge .badge-text strong { font-size: 1rem; }
+        .download-row { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wordication: Word Guess Party</h1>
+        <p>Legal &amp; Support</p>
+    </header>
+
+    <main>
+        <section class="links-section">
+            <h2>Download the App</h2>
+            <div class="download-row">
+                <!-- TODO: replace idXXXXXXXXXX with the App Store ID once the app is live. -->
+                <a href="https://apps.apple.com/app/idXXXXXXXXXX" class="app-badge" target="_blank" rel="noopener">
+                    <img src="public/icons/apple-logo.png" alt="" class="badge-icon">
+                    <div class="badge-text">
+                        <small>Download on the</small>
+                        <strong>App Store</strong>
+                    </div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.wordication" class="app-badge" target="_blank" rel="noopener">
+                    <img src="public/icons/google-play.png" alt="" class="badge-icon">
+                    <div class="badge-text">
+                        <small>Get it on</small>
+                        <strong>Google Play</strong>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="links-section">
+            <h2>Legal Documents</h2>
+            <div class="link-cards">
+                <a href="privacy.html" class="link-card">
+                    <div class="icon">&#128274;</div>
+                    <strong>Privacy Policy</strong>
+                    <span>How we handle your data</span>
+                </a>
+                <a href="terms.html" class="link-card">
+                    <div class="icon">&#128196;</div>
+                    <strong>Terms of Use</strong>
+                    <span>Rules for using the app</span>
+                </a>
+            </div>
+            <div class="lang-row">
+                <a href="fr/privacy.html">Fran&ccedil;ais</a>
+                <a href="de/privacy.html">Deutsch</a>
+                <a href="es/privacy.html">Espa&ntilde;ol</a>
+                <a href="it/privacy.html">Italiano</a>
+                <a href="hr/privacy.html">Hrvatski</a>
+                <a href="sr/privacy.html">Srpski</a>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <!-- TODO: replace YOUR_FORM_ID with the Formspree form id. -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your question or support request..." required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                <p class="form-note">Or email us directly at <a href="mailto:contact@wordicationapp.com">contact@wordicationapp.com</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Wordication: Word Guess Party. All rights reserved.
+    </footer>
+</body>
+</html>
