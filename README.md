@@ -1,7 +1,7 @@
 # wordication-legal
 
 Static legal & support site for **Wordication: Word Guess Party**, served by
-GitHub Pages at <https://wordicationapp.com> (see `CNAME`).
+GitHub Pages at <https://wordication.app> (see `CNAME`).
 
 ```
 index.html                     landing page (EN) — store links, legal links, contact form
@@ -46,5 +46,5 @@ All seven languages are required for every change: en, fr, de, es, it, hr, sr.
   `YOUR_FORM_ID` with the Formspree form id.
 - `app-ads.txt` — replace the placeholder AdMob publisher ID, Unity game ids
   and Meta app id (every line marked `# TODO`).
-- Point the `wordicationapp.com` DNS at GitHub Pages and enable Pages for this
+- Point the `wordication.app` DNS at GitHub Pages and enable Pages for this
   repo.
