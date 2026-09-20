@@ -45,6 +45,8 @@ PAGE = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} - Wordication: Word Guess Party</title>
+    <link rel="icon" type="image/png" href="{up}public/icons/wordication-icon.png">
+    <link rel="apple-touch-icon" href="{up}public/icons/wordication-icon.png">
     <style>
 {style}
     </style>
@@ -89,28 +91,28 @@ def build():
         # --- current version -------------------------------------------------
         for lang in LANGS:
             if lang == "en":
-                home = "index.html"
+                home, up = "index.html", ""
                 hrefs = {l: (f"{doc}.html" if l == "en" else f"{l}/{doc}.html") for l in LANGS}
                 out = REPO / f"{doc}.html"
             else:
-                home = "../index.html"
+                home, up = "../index.html", "../"
                 hrefs = {l: (f"../{doc}.html" if l == "en" else
                              (f"{doc}.html" if l == lang else f"../{l}/{doc}.html")) for l in LANGS}
                 out = REPO / lang / f"{doc}.html"
             write(out, PAGE.format(
                 lang=lang, title=st[lang][f"{doc}Title"], style=STYLE, home=home,
-                back=st[lang]["home"], notice="", switch=switch_links(lang, hrefs),
+                up=up, back=st[lang]["home"], notice="", switch=switch_links(lang, hrefs),
                 body=body(lang, doc)))
 
         # --- frozen snapshot -------------------------------------------------
         for lang in LANGS:
             if lang == "en":
-                home = "../../index.html"
+                home, up = "../../index.html", "../../"
                 latest = f"../../{doc}.html"
                 hrefs = {l: ("index.html" if l == "en" else f"{l}/index.html") for l in LANGS}
                 out = REPO / doc / VERSION / "index.html"
             else:
-                home = "../../../index.html"
+                home, up = "../../../index.html", "../../../"
                 latest = f"../../../{lang}/{doc}.html"
                 hrefs = {l: ("../index.html" if l == "en" else
                              ("index.html" if l == lang else f"../{l}/index.html")) for l in LANGS}
@@ -120,7 +122,7 @@ def build():
                       + "</div>\n")
             write(out, PAGE.format(
                 lang=lang, title=st[lang][f"{doc}Title"], style=STYLE + VERSION_STYLE,
-                home=home, back=st[lang]["home"], notice=notice,
+                home=home, up=up, back=st[lang]["home"], notice=notice,
                 switch=switch_links(lang, hrefs), body=body(lang, doc)))
 
 

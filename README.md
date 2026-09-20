@@ -10,13 +10,16 @@ privacy.html  terms.html       current documents, English
 privacy/<version>/...          frozen snapshot of each released version
 terms/<version>/...            (EN at index.html, translations at <lang>/index.html)
 app-ads.txt                    AdMob + mediation declaration
-public/icons/                  store badge icons
+public/icons/                  store badge icons + wordication-icon.png (favicon,
+                               apple-touch-icon and the landing-page header image;
+                               copied from ../wordication/assets/images/icon-rounded.png)
 _src/                          source of the documents + the generator (not published:
                                GitHub Pages' Jekyll skips paths starting with "_")
 ```
 
 ## Editing the documents
 
+`index.html` is hand-maintained; everything else is generated.
 Never edit the generated HTML by hand — the same body is used by 4 pages per
 language. Edit `_src/content/<lang>/{privacy,terms}.html` (body only) or
 `_src/content/<lang>/strings.json` (page title, "Home" label, version notice),
