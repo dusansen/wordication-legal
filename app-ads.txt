@@ -5,8 +5,7 @@
 # -------------------------
 # Google AdMob (Mediation)
 # -------------------------
-# Replace PUB-XXXXXXXXXXXXXXXX with your AdMob Publisher ID (e.g. pub-1234567890123456)
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0  # TODO: Wordication AdMob publisher ID
+google.com, pub-5418910210735666, DIRECT, f08c47fec0942fa0
 
 # -------------------------
 # Unity Ads

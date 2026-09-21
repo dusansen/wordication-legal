@@ -42,8 +42,7 @@ All seven languages are required for every change: en, fr, de, es, it, hr, sr.
 
 ## TODO before going live
 
-- `index.html` — replace `idXXXXXXXXXX` with the App Store ID and
-  `YOUR_FORM_ID` with the Formspree form id.
+- `index.html` — replace `YOUR_FORM_ID` with the Formspree form id.
 - `app-ads.txt` — replace the placeholder AdMob publisher ID, Unity game ids
   and Meta app id (every line marked `# TODO`).
 - Point the `wordication.app` DNS at GitHub Pages and enable Pages for this
