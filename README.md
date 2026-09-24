@@ -4,12 +4,12 @@ Static legal & support site for **Wordication: Word Guess Party**, served by
 GitHub Pages at <https://wordication.app> (see `CNAME`).
 
 ```
-index.html                     landing page (EN) — store links, legal links, contact form
+index.html                     landing page (EN) — store links, legal links, contact email
 privacy.html  terms.html       current documents, English
 <lang>/privacy.html  terms.html    fr, de, es, it, hr, sr
 privacy/<version>/...          frozen snapshot of each released version
 terms/<version>/...            (EN at index.html, translations at <lang>/index.html)
-app-ads.txt                    AdMob + mediation declaration
+app-ads.txt                    AdMob seller declaration
 public/icons/                  store badge icons + wordication-icon.png (favicon,
                                apple-touch-icon and the landing-page header image;
                                copied from ../wordication/assets/images/icon-rounded.png)
@@ -39,11 +39,3 @@ All seven languages are required for every change: en, fr, de, es, it, hr, sr.
 3. Run `python3 _src/build.py`. The current pages are overwritten and a new
    frozen snapshot appears under `privacy/<version>/` and `terms/<version>/`.
    Older snapshots stay untouched, so links handed to the stores keep working.
-
-## TODO before going live
-
-- `index.html` — replace `YOUR_FORM_ID` with the Formspree form id.
-- `app-ads.txt` — replace the placeholder AdMob publisher ID, Unity game ids
-  and Meta app id (every line marked `# TODO`).
-- Point the `wordication.app` DNS at GitHub Pages and enable Pages for this
-  repo.

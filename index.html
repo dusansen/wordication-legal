@@ -51,47 +51,28 @@
         .lang-row a { color: #5B3FE0; text-decoration: none; padding: 4px 12px; border-radius: 20px; border: 1px solid #D5CBFA; background: #fff; }
         .lang-row a:hover { background: #EFEBFE; }
 
-        /* Contact form */
+        /* Contact */
         .contact-section h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 16px; }
-        form {
+        .contact-card {
             background: #fff;
             border: 1px solid #E7E2F7;
             border-radius: 12px;
             padding: 28px 24px 24px;
         }
-        .field { margin-bottom: 18px; }
-        label { display: block; font-size: 0.88rem; font-weight: 600; color: #555; margin-bottom: 6px; }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px 14px;
-            border: 1px solid #DCD5F0;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-family: inherit;
-            color: #333;
-            background: #FAF8FF;
-            transition: border-color 0.15s;
-            outline: none;
-        }
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        textarea:focus { border-color: #5B3FE0; background: #fff; }
-        textarea { resize: vertical; min-height: 130px; }
-        button[type="submit"] {
+        .contact-card p { color: #555; margin-bottom: 18px; }
+        .contact-button {
+            display: inline-block;
             background: #5B3FE0;
             color: #fff;
-            border: none;
+            text-decoration: none;
             border-radius: 8px;
             padding: 12px 28px;
             font-size: 0.95rem;
             font-weight: 600;
-            cursor: pointer;
             transition: background 0.15s;
         }
-        button[type="submit"]:hover { background: #4A30C4; }
-        .form-note { font-size: 0.82rem; color: #999; margin-top: 12px; }
+        .contact-button:hover { background: #4A30C4; }
+        .contact-card .contact-note { font-size: 0.82rem; color: #999; margin: 12px 0 0; user-select: all; }
 
         footer { text-align: center; color: #bbb; font-size: 0.82rem; padding: 24px; }
 
@@ -170,23 +151,11 @@
 
         <section class="contact-section">
             <h2>Contact Us</h2>
-            <!-- TODO: replace YOUR_FORM_ID with the Formspree form id. -->
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <div class="field">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
-                </div>
-                <div class="field">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                </div>
-                <div class="field">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your question or support request..." required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-                <p class="form-note">Or email us directly at <a href="mailto:contact@wordication.app">contact@wordication.app</a></p>
-            </form>
+            <div class="contact-card">
+                <p>Questions, bug reports or feedback? Write to us and we'll get back to you.</p>
+                <a href="mailto:contact@wordication.app?subject=Wordication%20support" class="contact-button">Email us</a>
+                <p class="contact-note">contact@wordication.app</p>
+            </div>
         </section>
     </main>
 
