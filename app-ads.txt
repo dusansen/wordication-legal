@@ -22,9 +22,10 @@ unityads.unity3d.com, YOUR_UNITY_ANDROID_GAME_ID, DIRECT, 4016757  # TODO
 # -------------------------
 # Meta Audience Network
 # -------------------------
-# Replace YOUR_META_APP_ID with your Facebook/Meta App ID
-facebook.com, YOUR_META_APP_ID, DIRECT, c3e20eee3f780d68  # TODO
-audiencenetwork.com, YOUR_META_APP_ID, DIRECT, 292ba6274482705  # TODO
+# Monetization Manager property ID (doubles as the app id; iOS and Android
+# share it). Format and RESELLER exactly as Meta specifies at
+# developers.facebook.com/docs/audience-network/optimization/best-practices/authorized-sellers-app-ads
+facebook.com, 1131781342672662, RESELLER, c3e20eee3f780d68
 
 # -------------------------
 # AppLovin
