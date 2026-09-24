@@ -11,7 +11,7 @@ import json, os, pathlib, shutil
 
 HERE = pathlib.Path(__file__).parent
 REPO = HERE.parent
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 LANGS = ["en", "fr", "de", "es", "it", "hr", "sr"]
 
 STYLE = """        *, *::before, *::after { box-sizing: border-box; }
